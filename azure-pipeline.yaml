@@ -19,7 +19,7 @@ steps:
   displayName: 'yarn install and build'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'docusaurus-static-site-azure-app-service/build'
+    SourceFolder: '$(Build.SourcesDirectory)/build'
     Contents: '**'
     TargetFolder: '$(build.artifactstagingdirectory)'
     CleanTargetFolder: true
