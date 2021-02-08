@@ -15,7 +15,7 @@ steps:
 - script: |
     yarn install
     yarn build 
-  workingDirectory: '$(Build.SourcesDirectory)/docusaurus-static-site-azure-app-service/website/'
+  workingDirectory: '$(Build.SourcesDirectory)'
   displayName: 'yarn install and build'
 - task: CopyFiles@2
   inputs:
